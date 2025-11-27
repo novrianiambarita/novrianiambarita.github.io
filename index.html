@@ -5,118 +5,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novriani Ambarita</title>
     <style>
+        :root {
+            --primary: #6c63ff;
+            --text: #333;
+            --bg: #ffffff;
+        }
+
         body {
             font-family: Arial, sans-serif;
+            background: #f4f4f9;
             margin: 0;
             padding: 0;
-            background: #f9f9f9;
         }
+
         header {
-            background-color: #6c63ff;
-            color: white;
+            background: var(--primary);
+            color: #fff;
             text-align: center;
-            padding: 35px 0;
+            padding: 40px 20px;
         }
-        .profile-container {
+
+        .container {
             max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
+            margin: 20px auto;
+            background: var(--bg);
+            padding: 25px;
             border-radius: 12px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         }
+
         .profile-img {
             width: 180px;
             height: 180px;
-            border-radius: 50%;
             object-fit: cover;
+            border-radius: 50%;
             display: block;
-            margin: auto;
-            border: 4px solid #6c63ff;
+            margin: 0 auto;
+            border: 4px solid var(--primary);
         }
-        h2 {
+
+        h2, h3 {
+            color: var(--primary);
             text-align: center;
-            margin-top: 15px;
         }
-        .section-title {
-            margin-top: 25px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #6c63ff;
+
+        p, li {
+            color: var(--text);
+            line-height: 1.6;
         }
+
         ul {
-            list-style: none;
-            padding: 0;
+            padding-left: 16px;
         }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 10px;
+        }
+
         .sosmed a {
-            background: #6c63ff;
-            color: white;
-            padding: 8px 14px;
-            margin-right: 8px;
             text-decoration: none;
-            border-radius: 5px;
+            padding: 10px 16px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 6px;
+            margin: 5px;
+            display: inline-block;
+            transition: 0.3s;
         }
+
+        .sosmed a:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+
         footer {
             text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-            margin-top: 50px;
+            padding: 15px;
+            background: #262626;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                font-size: 14px;
+                padding: 30px 10px;
+            }
+            .container {
+                margin: 10px;
+                padding: 18px;
+            }
+            .profile-img {
+                width: 140px;
+                height: 140px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Profil Pribadi</h1>
-    </header>
+<header>
+    <h1>Novriani Ambarita</h1>
+</header>
 
-    <div class="profile-container">
-        
-        <!-- FOTO PROFIL -->
-        <img src="foto-profil.jpg" alt="Novriani Ambarita" class="profile-img">
-        
-        <h2>Novriani Ambarita</h2>
+<div class="container">
 
-        <!-- BIO -->
-        <p style="text-align:center;">
-            Halo! Saya Novriani Ambarita — mahasiswa yang tertarik pada bidang teknologi,
-            desain, dan pengembangan aplikasi. Senang berkenalan dengan Anda! 😊
+    <img src="foto-profil.jpg" alt="Novriani Ambarita" class="profile-img">
+
+    <p style="text-align:center; margin-top:10px;">
+        Mahasiswa Sistem Informasi | Universitas Katolik Indonesia Atma Jaya
+    </p>
+
+    <div class="contact">
+        📞 081298546650 | ✉️ novrianiambarita16@gmail.com
+    </div>
+
+    <div class="section">
+        <h3>Tentang Saya</h3>
+        <p>
+            Saya seorang mahasiswa aktif yang memiliki semangat dalam berorganisasi,
+            serta mampu beradaptasi dan berkomunikasi dengan baik. Saya siap berkontribusi
+            dalam berbagai kegiatan dan terus berkembang dalam dunia teknologi serta sosial.
         </p>
+    </div>
 
-        <!-- PENDIDIKAN -->
-        <div class="section-title">🎓 Pendidikan</div>
+    <div class="section">
+        <h3>Pendidikan</h3>
         <ul>
-            <li>Universitas Katolik Indonesia Atma Jaya — Sistem Informasi</li>
+            <li>2020 - 2023 | SMA Negeri 1 Gunung Sindur — MIPA</li>
+            <li>2023 - Sekarang | Universitas Katolik Indonesia Atma Jaya — Sistem Informasi</li>
         </ul>
+    </div>
 
-        <!-- KEAHLIAN -->
-        <div class="section-title">💡 Keahlian</div>
+    <div class="section">
+        <h3>Keahlian</h3>
         <ul>
-            <li>Web Development</li>
-            <li>UI/UX Design</li>
-            <li>Machine Learning</li>
+            <li>Kepemimpinan</li>
+            <li>Mudah Beradaptasi</li>
+            <li>Komunikasi</li>
+            <li>Microsoft Office</li>
         </ul>
+    </div>
 
-        <!-- KONTAK -->
+    <div class="section">
+        <h3>Pengalaman Organisasi</h3>
+        <ul>
+            <li>2021-2022 | Majelis Permusyawaratan Kelas — Ketua Komisi C</li>
+            <li>2022-2023 | Karang Taruna — Ketua</li>
+            <li>2024-Sekarang | Pastoran Atma Jaya — Staff Liturgi</li>
+            <li>2024-Sekarang | Forum Diskusi Ilmiah — Anggota</li>
+            <li>2025 | Young Catholic Students — Anggota</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Pengalaman Kerja</h3>
+        <ul>
+            <li>2024 | PT. Ciomas Adisatwa — Packing</li>
+            <li>2024 | Ice BSD — FnB Banquet</li>
+            <li>2024 | Freelance TMII — SPG</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Pengalaman Sukarelawan</h3>
+        <ul>
+            <li>2024 | Sukarelawan POPE Francis</li>
+            <li>2023 | Bakti Sosial Senat Fakultas Teknik</li>
+            <li>2024 | Bakti Sosial Prodi Sistem Informasi</li>
+        </ul>
+    </div>
+    
         <div class="section-title">📞 Kontak & Sosial Media</div>
         <p><strong>Email:</strong> novrianiambarita16@gmail.com</p>
         <div class="sosmed">
-            <a href="https://www.instagram.com/benedictatheresia_?igsh=MTgyOXoyanh2emxsZA%3D%3D&utm_source=qr" target="_blank">
-        Instagram
+            <a href="https://www.instagram.com/benedictatheresia_?igsh=MTgyOXoyanh2emxsZA%3D%3D&utm_source=qr" target="_blank">Instagram</a>
             <a href="www.linkedin.com/in/novrianiambarita16" target="_blank">LinkedIn</a>
             <a href="https://github.com/novrianiambarita" target="_blank">GitHub</a>
         </div>
-
+            </a>
+        </div>
     </div>
 
-    <footer>
-        © 2025 Novriani Ambarita
-    </footer>
+</div>
+
+<footer>
+    © 2025 Novriani Ambarita | All Rights Reserved
+</footer>
 
 </body>
 </html>
-
-
-
-
